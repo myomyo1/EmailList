@@ -34,10 +34,10 @@ public class EmaillistDao {
 			pstmt.setString(2,vo.getFirstName());
 			pstmt.setString(3,vo.getEmail());
 						
-			int count = pstmt.executeUpdate();
+			int result = pstmt.executeUpdate(); //db에 잘들어갔는지 확인할 수 있음 => 0,1값이 리턴됨.
 			
 			// 4.결과처리
-			System.out.println(count + "건 저장완료");
+			System.out.println("처리결과 : " + result);
 
 		} catch (ClassNotFoundException e) {
 			System.out.println("error: 드라이버 로딩 실패 - " + e);

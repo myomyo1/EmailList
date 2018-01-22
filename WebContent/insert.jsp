@@ -5,7 +5,7 @@
 
 <%
 	request.setCharacterEncoding("UTF-8");
-	String lastName = request.getParameter("ln");
+	String lastName = request.getParameter("ln"); //request안에 getParameter : 괄호안값("ln")이랑 맞으면 꺼내쓸 수 있게 만든 것. 내가쓰고싶은 이름(lastName)에 담아둔 것.
 	String firstName = request.getParameter("fn");
 	String email = request.getParameter("email");
 

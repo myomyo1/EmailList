@@ -4,11 +4,12 @@
 <%@ page import = "java.util.List" %>
 
 <%
+
+	//데이터를 미리 가져온 것.
 	EmaillistDao dao = new EmaillistDao();
 	List<EmaillistVo> eList = dao.getList();
 	System.out.println(eList.size());
 	//System.out.println(eList.toString());
-	
 
 %>
 
